@@ -1,0 +1,815 @@
+<html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<body>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(12, 12, 12);
+            color: rgb(216, 221, 225);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: aliceblue;
+            margin-left: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 5px;
+            margin-left: 25px;
+        }
+
+        #input {
+            width: 280px;
+            height: 25px;
+        }
+
+        h5,
+        h1 {
+            margin-top: 50px;
+        }
+
+        #div1 {
+            width: 50px;
+            height: 25px;
+            background-color: rgb(124, 120, 120);
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        #div2 {
+            width: 100px;
+            height: 25px;
+            background: linear-gradient(rgb(215, 82, 20), rgb(241, 223, 100), rgb(219, 85, 44));
+            border-radius: 15px;
+            display: inline-block;
+        }
+
+        #div3 {
+            width: 30px;
+            height: 100px;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 15px;
+            margin-left: 550px;
+            margin-top: -36px;
+        }
+
+        #div4 {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 50%;
+            float: right;
+            margin-right: 500px;
+        }
+
+        #div5 {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: linear-gradient(rgb(215, 82, 20), rgb(241, 223, 100), rgb(219, 85, 44));
+            border: 1px solid rgb(222, 217, 212);
+            margin-left: 500px;
+            margin-top: -65px;
+        }
+
+        #div6,#div10c {
+            width: 30px;
+            height: 100px;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 15px;
+        }
+       #div10c{float: right; margin-right: 60px; margin-top: 180px;} 
+
+        #div7 {
+            width: 40px;
+            height: 30px;
+            border-radius: 35%;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            margin: 10px;
+        }
+
+        #d67 {
+            display: inline-flex;
+            margin-left: 320px;
+            margin-top: -100px;
+
+        }
+
+        #div8 {
+            width: 16px;
+            height: 16px;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 50%;
+            float: right;
+            margin-right: 470px;
+            margin-top: -35px;
+        }
+
+
+        .p1 {
+            margin-left: 150px;
+            margin-top: 55px;
+        }
+
+        .p2 {
+            font-size: medium;
+            float: right;
+            margin-right: 200px;
+            margin-top: -200px;
+
+        }
+
+        #img1 {
+            border-radius: 25px;
+            width: 180px;
+            height: 300px;
+            border-radius: 80px;
+            margin-top: -80px;
+        }
+        #img1{box-shadow: 25px 20px  rgb(105, 152, 158);}
+
+        #img1:hover {
+            cursor: pointer;
+            scale: 112%;
+        }
+
+        #div9 {
+            margin-top: 80px;
+            font-size: x-large;
+        }
+
+        .p3 {
+            font-size: xx-large;
+            margin-top: 70px;
+        }
+
+        #div10 {
+            margin-top: 50px;
+            display: inline-flex;
+        }
+
+        #div10a {
+            margin-left: 70px;
+        }
+
+        #div10b {
+            margin-top: -90px;
+            color: black;
+        }
+
+        .b1 {
+            background-color: rgb(228, 122, 9);
+            color: aliceblue;
+            margin-top: 5px;
+            width: 50px;
+            border-radius: 20px;
+        }
+
+        #img2 {
+            width: 220px;
+            height: 370px;
+            border-radius: 15px;
+        }
+
+        #img2:hover {
+            scale: 112%;
+        }
+
+        .p4 {
+            font-size: 50px;
+            margin-top: 25px;
+        }
+
+        .p5 {
+            color: goldenrod;
+            margin-top: 60px;
+        }
+
+        .p6 {
+            font-size: 30px;
+        }
+
+        #div11 {
+            margin-top: 50px;
+        }
+
+        .b2 {
+            width: 115px;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 5px;
+            margin-left: 110px;
+            cursor: pointer;
+        }
+
+        .b3 {
+            width: 115px;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(246, 105, 4);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            margin-left: 200px;
+            cursor: pointer;
+        }
+
+        .b4 {
+            width: 45px;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .b5,
+        .b6,
+        .b7 {
+            width: 120px;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+        .b8 {
+            width: 85px;
+            height: 30px;
+            color: aliceblue;
+            background-color: rgb(246, 105, 4);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            margin-left: 260px;
+            cursor: pointer;
+        }
+
+        #div12 {
+            margin-top: 20px;
+            
+        }
+
+        #div12a {
+            width: 250px;
+            height: 380px;
+            color: aliceblue;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            display:inline-block;
+            margin-left: 85px;
+            margin-top: 50px;
+        }
+
+        #div12a img {
+            width: 200px;
+            height: 270px;
+            border-radius: 20px;
+            margin-top: 15px;
+        }
+        #div12a img:hover{
+            cursor: pointer;
+            scale: 111%;
+        }
+
+        .p7 {
+            margin-top: 30px;
+            font-size: small;
+            margin-left: -100px;
+        }
+
+        .p8 {
+            font-size: larger;
+            margin-left: -60px;
+        }
+
+        label {
+            float: right;
+            margin-top: -40px;
+        }
+
+        .p9 {
+            color: rgb(245, 122, 14);
+        }
+        .b9{ width: 95px;
+            height: 35px; margin-top: 50px; margin-right: 275px;
+            color: aliceblue;
+            background-color: rgb(12, 12, 12);
+            border: 1px solid rgb(222, 217, 212);
+            border-radius: 20px;
+            margin-left: 260px;
+            cursor: pointer;
+        }
+        .b9:hover{scale: 108%;}
+
+        .p10{color: rgb(245, 122, 14) ; font-size: 30px;
+        }
+        #div13{margin-top: 30px;
+        }
+
+        #div13a { width: 400px; height: 55px;
+            border: 1px solid rgb(250, 249, 247); 
+         display: inline-block;margin: 30px; margin-left: 40px;cursor: pointer; }
+         #div13a:hover{scale: 111%;}
+
+        #div13a img{ width: 35px; height: 35px; border-radius: 50%;
+             margin-left:25px ; margin-top: -30px ;position: absolute;
+        }
+        #div13a b {
+            margin-left: 80px; margin-top: -34px; position: absolute;
+        }
+        .p11{margin-left: 80px;margin-top: -7px; position:absolute;}
+
+        .p11a{float: right; margin-top: -34px;margin-right: 10px;color: rgb(10, 238, 10);}
+
+        .p11aa{float: right; margin-top: -34px;margin-right: 10px;color: red}
+
+        .p11b{float: right;margin-top: -7px;margin-right: 10px;
+         color: rgb(245, 122, 14);}
+
+        .p11c{font-size: 25px;margin-top: 10px;
+        }
+
+        .b10{width: 130px; height: 40px;  border: 1px solid rgb(222, 217, 212);
+        margin-top: 40px; background-color: rgb(12, 12, 12);border-radius: 20px;
+      cursor: pointer;
+    }
+    .b10:hover{scale: 108%;}
+
+    #div14{border: 1px solid rgb(222, 217, 212); margin-top: -50px;
+         width: 110px;height: 35px;border-radius: 14px;margin-left: 70px;}
+
+         #div15{border: 1px solid rgb(222, 217, 212); 
+        height: 110px;width: 35px;border-radius: 14px;float: right;margin-right: 135px;margin-top: -95px;}
+
+        #div16{border: 1px solid rgb(222, 217, 212); margin-top: 15px;
+         width: 30px;height: 55px;border-radius: 14px;margin-left: 150px;}
+
+         #div17{border: 1px solid rgb(222, 217, 212); 
+        height: 40px;width: 40px;border-radius: 25px;float: right;margin-right: 135px;margin-top: -70px;
+      }
+      #div18{margin-top: 30px;}
+      .p12{color: goldenrod;margin-left: 20px;}
+      .p13{font-size: 30px;}
+      .p14{margin-top: 35px;color: rgb(238, 156, 5);}
+      .p15{float: right; color: rgb(238, 156, 5);margin-top: -19px;}
+
+      #div19a{height: 150px;}
+      #div19b{width: 400px;height: 50px;
+    display: inline-block;}
+
+    .p16{margin-left: 20px;position: absolute;}
+    .p17{font-size:x-large;}
+    .p18{margin-top: 25px;}
+
+    .p19{font-size:55px; }
+    .p20,.p21,.p22,.p23{font-size: 30px; }
+    .p23{margin-left: -250px;}
+    
+    
+    #div20b{display: inline-block;margin-left: 100px;margin-top: 40px;}
+    #div20c{display: inline-block;margin-left: 400px;margin-top: 30px;}
+
+    #div21{float: right;margin-top: -70px; margin-right: 50px;}
+    #input2{width: 330px;height: 50px; background-color:  rgb(12, 12, 12);
+        border: 1px solid rgb(222, 217, 212);}
+
+    .p24{font-size: larger;}
+    .b11{width: 50px; height: 30px; color: aliceblue;background-color: rgb(230, 115, 20);  border: 1px solid rgb(222, 217, 212);}
+
+          #div23{margin-top: 30px;}
+
+          .p27{color: goldenrod;}
+          .p28{font-size: 28px;}
+            #div22{
+                width: 100%;
+                height: 500px;
+                margin-top: 20px;
+                display:flex;
+            }
+            #div22a{width: 300px;
+                height: 80px;
+                border: 2px solid white;
+               font-size: larger;
+                border-radius: 10px; 
+                }
+
+            #div22a{transform: rotateZ(90deg);
+                margin-top: 210px;}
+
+            #div22a p{margin-top: 30px; margin-left: 50px;}    
+
+            #div22a1
+            {
+            width: 380px;
+            height: 300px;
+            border: 2px solid white;
+            border-radius: 10px;
+            display: none; 
+            margin-top: 100px;   
+            margin-left: -110px;      }
+
+           #div22a:hover+#div22a1
+           {   display: block;  }
+
+            #div22 img{
+                width: 380px;
+                height: 300px;  }
+
+            .p25{font-size: 25px;margin-top: -110px;margin-left: 25px;}
+            .p26{margin-left: 25px;}
+       
+            .drop{display: none;}
+            a:hover .drop{display: block;}
+
+    </style>
+    <nav>
+        <ul>
+            <li> <a href="#">Home
+                <div class="drop">
+                    <div class="down">TERM 1</div>    <div class="down">TERM 2</div>
+                    <div class="down">TERM 3</div>    <div class="down">TERM 4</div>
+                    </div>
+        
+            </a> </li>
+            <li><input type="text" placeholder="search" id="input"></li>
+            <li> <a href="#">About</a> </li>
+            <li> <a href="#">Contact</a> </li>
+            <li> <a href="#">Services</a> </li>
+            <li> <a href="#">Gallery</a> </li>
+
+        </ul>
+    </nav>
+    <center>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque et hic suscipit!</h5>
+
+        <h1>Discover <div id="div1"></div> Collect <br>and Sell <div id="div2"></div><br> Remarkable NFTs.</h1>
+        <div id="div3"></div>
+        <div id="div4"></div>
+    </center>
+
+    <p class="p1">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. <br>Doloremque, at quos! Laboriosam<br>
+        harum blanditiis tempora? Corporis<br> impedit facilis iure voluptatum<br> illo totam quia eaque sed?</p>
+
+    <div id="div5"></div>
+
+    <center>
+        <img src="monkey-nft-1.jpg" id="img1">
+    </center>
+    <p class="p2">Lorem, ipsum dolor sit amet<br> consectetur adipisicing elit.<br> Praesentium, ab qui! Voluptates at
+        <br>quaerat quo harum rem est?
+    </p>
+    <div id="d67">
+        <div id="div6"></div>
+        <div id="div7"></div>
+    </div>
+    <div id="div8"></div>
+    <center>
+        <div id="div9">
+            <pre>𝒫𝓇𝒶𝓈𝒽𝒶𝓃𝓉      𝓟𝓻𝓪𝓼𝓱𝓪𝓷𝓽      Ᵽɍa̷s̷ħa̷n̷ŧ          የዪልነዘልክፕ     ｱ尺丂んﾑ刀ｲ     ℙ𝕣𝕒𝕤𝕙𝕒𝕟   P̧͕̒̊͘r̴̨̦͕̝ā̤̓̍͘s̠҉͍͊ͅḣ̖̻͛̓ā̤̓̍͘ṇ̤͛̒̍t̲̂̓ͩ̑    P̷r̷a̷s̷h̷a̷n̷t̷     <br><br> 🄿🅁🄰🅂🄷🄰🄽🅃     prคŞhคຖt     þrå§håñ†      P̅r̅a̅s̅h̅a̅n̅t̅     የዪልነዘልክፕ     P͓̽r͓̽a͓̽s͓̽h͓̽a͓̽n͓̽t͓̽     Ⓟⓡⓐⓢⓗⓐⓝⓣ       🅿🆁🅰🆂🅷🅰🅽🆃 </pre>
+        </div>
+
+        <p class="p3">Foremost Rem<br> Collections</p>
+        
+        <div id="div10">
+            
+            <div id="div10a">
+                <img src="monkey-nft-2.jpg" id="img2">
+                <div id="div10b">
+                    <h3>Pink Gang</h3>Lorem ipsum dolor sit consectetur <br>adipisicing elit. cupiditate?<br><button
+                        class="b1">Live</button>
+                </div>
+            </div>
+
+            <div id="div10a">
+                <img src="monkey-nft-3.jpg" id="img2">
+                <div id="div10b">
+                    <h3>Street Punk</h3>Lorem ipsum dolor sit consectetur <br>adipisicing elit. cupiditate?<br><button
+                        class="b1">Live</button>
+                </div>
+            </div>
+
+            <div id="div10a">
+                <img src="monkey-nft-4.jpg" id="img2">
+                <div id="div10b">
+                    <h3>Fungky Dobe</h3>Lorem ipsum dolor sit consectetur <br>adipisicing elit. cupiditate?<br><button
+                        class="b1">Live</button>
+                </div>
+            </div>
+            
+
+        </div>
+        <div id="div10c"></div>
+        <p class="p4">....</p>
+        <p class="p5">DISCOVER</p>
+        <p class="p6">Discover Items</p>
+    </center>
+    <div id="div11">
+        <button class="b2">Long added</button>
+        <button class="b3">All categories</button>
+        <button class="b4">Art</button>
+        <button class="b5">Game</button>
+        <button class="b6">Virtual Worlds</button>
+        <button class="b7">Photography</button>
+        <button class="b8">Filter</button>
+    </div>
+    <div id="div12">
+        <div id="div12a">
+            <center> <img src="monkey-nft-5.jpg">
+                <p class="p7">Bored Ape Yacht</p>
+                <p class="p8">Doc ape art #7564</p>
+                <label>Price<br>
+                    <p class="p9">$87</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-6.jpg">
+                <p class="p7">MORO</p>
+                <p class="p8">Ape Swag art #7865</p>
+                <label>Price<br>
+                    <p class="p9">$90</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-7.jpg">
+                <p class="p7">Clone Z</p>
+                <p class="p8">Hype gang art #5133</p>
+                <label>Price<br>
+                    <p class="p9">$127</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-8.jpg">
+                <p class="p7">Zombief House</p>
+                <p class="p8">Purple ape side #9564</p>
+                <label>Price<br>
+                    <p class="p9">$85</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-9.jpg">
+                <p class="p7">Skull Ape Yacht</p>
+                <p class="p8">Cool ape art #7414</p>
+                <label>Price<br>
+                    <p class="p9">$99</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-10.jpg">
+                <p class="p7">Crypto Dunks</p>
+                <p class="p8">Ape patrol art #3457</p>
+                <label>Price<br>
+                    <p class="p9">$87</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-11.jpg">
+                <p class="p7">CryptoAks</p>
+                <p class="p8">Black White ape #9031</p>
+                <label>Price<br>
+                    <p class="p9">$75</p>
+                </label>
+            </center>
+        </div>
+
+        <div id="div12a">
+            <center> <img src="monkey-nft-12.jpg">
+                <p class="p7">Azuko</p>
+                <p class="p8">Red eye art #0873</p>
+                <label>Price<br>
+                    <p class="p9">$78</p>
+                </label>
+            </center>
+        </div>
+    </div>
+      <center><button class="b9">Load More</button>
+    <p class="p5">NFT COLLECTOR</p>
+    <p class="p6">Top Collections</p>
+    <p class="p10">In a Week</p>
+    </center>
+
+    <div id="div13">
+      <div id="div13a"><p class="p11c">1</p> <img src="monkey-nft-1.jpg">
+        <b>Bored Ape Yacht...</b>
+        <p class="p11">Floor price : $97.99</p>
+        <p class="p11a">+194.13%</p>
+        <p class="p11b">$36,294.95</p>
+    </div>
+
+    <div id="div13a"><p class="p11c">2</p> <img src="monkey-nft-2.jpg">
+        <b>Skull Ape Yacht...</b>
+        <p class="p11">Floor price : $27.99</p>
+        <p class="p11a">+274.33%</p>
+        <p class="p11b">$36,294.95</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">3</p> <img src="monkey-nft-3.jpg">
+        <b>Crypto Dunks</b>
+        <p class="p11">Floor price : $...</p>
+        <p class="p11aa">-25.14%</p>
+        <p class="p11b">$6,904.95</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">4</p> <img src="monkey-nft-4.jpg">
+        <b>Bored Ape Baf...</b>
+        <p class="p11">Floor price : $7.88</p>
+        <p class="p11a">+567.34%</p>
+        <p class="p11b">$8,940.05</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">5</p> <img src="monkey-nft-5.jpg">
+        <b>MORO</b>
+        <p class="p11">Floor price : $37.70</p>
+        <p class="p11aa">-34.28%</p>
+        <p class="p11b">$8,124.53</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">6</p> <img src="monkey-nft-6.jpg">
+        <b>Clone Z</b>
+        <p class="p11">Floor price : $14.8</p>
+        <p class="p11a">+284.88%</p>
+        <p class="p11b">$294.01</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">7</p> <img src="monkey-nft-7.jpg">
+        <b>Azuko</b>
+        <p class="p11">Floor price : $12.59</p>
+        <p class="p11a">+264.63%</p>
+        <p class="p11b">$6,294.95</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">8</p> <img src="monkey-nft-8.jpg">
+        <b>ZombieFan hou..</b>
+        <p class="p11">Floor price : $2.9</p>
+        <p class="p11a">-</p>
+        <p class="p11b">$3,629</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">9</p> <img src="monkey-nft-9.jpg">
+        <b>Goodles</b>
+        <p class="p11">Floor price : $34.09</p>
+        <p class="p11a">+38.56%</p>
+        <p class="p11b">$3,729.35</p>
+    </div>
+    
+    <div id="div13a"><p class="p11c">10</p> <img src="monkey-nft-10.jpg">
+        <b>Meebfit</b>
+        <p class="p11">Floor price : $6.1</p>
+        <p class="p11aa">-65.92%</p>
+        <p class="p11b">$36,294.95</p>
+    </div>
+  
+    <div id="div13a"><p class="p11c">11</p> <img src="monkey-nft-11.jpg">
+        <b>CryptoAks</b>
+        <p class="p11">Floor price : $3.2</p>
+        <p class="p11a">+304.67%</p>
+        <p class="p11b">$294.95</p>
+    </div>
+   
+    <div id="div13a"><p class="p11c">12</p> <img src="monkey-nft-12.jpg">
+        <b>Bored Ape Zes...</b>
+        <p class="p11">Floor price : $32.11</p>
+        <p class="p11a">+434.36%</p>
+        <p class="p11b">$36,222.55</p>
+    </div>  
+    </div>
+
+    <center><button class="b10">View Rangkings</button></center>
+    <div id="div14"></div>
+    <div id="div17"></div>
+    <div id="div16"></div>
+    <div id="div15"></div>
+
+
+<div id="div23">
+    <center><p class="p27">TO BE CREATOR</p>
+    <p class="p28">Create and Sell<br>Your NFTs</p></center>
+</div>
+
+
+<div id="div22">
+    
+    <div id="div22a"><p>Sep up your wallet</p></div>
+    <div id="div22a1"><img src="monkey-nft-13.jpg">
+    <p class="p25">Sep up your wallet</p><br>
+    <p class="p26">Lorem ipsum dolor sit amet consectetur<br>
+     Perspiciatis doloribus, temporibus <br>libero laudantium enim incidunt.</p></div>
+
+    <div id="div22a"><p>Create and Collection</p></div>
+    <div id="div22a1"><img src="monkey-nft-14.jpg">
+    <p class="p25">Create your collection</p><br>
+    <p class="p26">Lorem ipsum dolor sit amet consectetur<br>
+     Perspiciatis doloribus, temporibus <br>libero laudantium enim incidunt.</p></div>
+
+    <div id="div22a"><p>Add your NFTs</p></div>
+    <div id="div22a1"><img src="monkey-nft-15.jpg">
+    <p class="p25">Add your NFTs</p><br>
+    <p class="p26">Lorem ipsum dolor sit amet consectetur<br> 
+    Perspiciatis doloribus, temporibus <br>libero laudantium enim incidunt.</p></div>
+
+    <div id="div22a"><p>List them for sale</p></div>
+    <div id="div22a1"><img src="monkey-nft-16.jpg">
+    <p class="p25">List them for sale</p><br>
+    <p class="p26">Lorem ipsum dolor sit amet consectetur<br>
+    Perspiciatis doloribus, temporibus <br>libero laudantium enim incidunt.</p></div>
+</div>
+
+
+
+
+    
+    <div id="div18">
+        <center>
+         <p class="p12">RESOURCES</p>
+        <p class="p13">Getting Started</p>
+        </center>
+        <p class="p14">Article</p>
+        <p class="p15">INTRODUCTION</p>
+    </div>
+    <hr>
+
+    <div id="div19">
+        <div id="div19a">
+        <div id="div19b"><p class="p16">SETUP</p></div>
+        <div id="div19b"><p class="p17">Setup a<br>MetaMask<br>Mallet</p></div>
+        <div id="div19b"><p class="p18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit dolores adipisci non tempora natus, assumenda facere cupiditate deserunt laudantium officia delectus voluptatum, quo tenetur architecto animi asperiores voluptates omnis.</p></div>
+    </div>
+    <hr>
+
+    <div id="div19a">
+        <div id="div19b"><p class="p16">FUND ETH</p></div>
+        <div id="div19b"><p class="p17">Fund<br>MetaMask with<br>ETH.</p></div>
+        <div id="div19b"><p class="p18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit dolores adipisci non tempora natus, assumenda facere cupiditate deserunt laudantium officia delectus voluptatum, quo tenetur architecto animi asperiores voluptates omnis.</p></div>
+    </div>
+    <hr>
+    
+    <div id="div19a">
+        <div id="div19b"><p class="p16">FUND NFT</p></div>
+        <div id="div19b"><p class="p17">Find<br>NFT.</p></div>
+        <div id="div19b"><p class="p18">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos velit dolores adipisci non tempora natus, assumenda facere cupiditate deserunt laudantium officia delectus voluptatum, quo tenetur architecto animi asperiores voluptates omnis.</p></div>
+    </div>
+    <hr>    
+</div>
+<center><button class="b10">Read More</button></center>
+
+<div id="div20">
+    <div id="div20a">
+    <div id="div20b"><p class="p19">Searcher</p></div>
+    <div id="div20b"><p class="p20">Marketplace</p></div>
+    <div id="div20b"><p class="p21">My Account</p></div> </div>
+
+<div id="div20c"><p class="p22">Resources</p></div>
+<div id="div20c"><p class="p23">Company</p></div>
+</div>
+
+<div id="div21"><p class="p24">Stay updated<br>join our mailling list.</p>
+<input type="email" id="input2" placeholder="Enter you email" style="color: aliceblue;">
+<button class="b11">></button>
+</div>
+
+
+<div style="margin-top: 60px; font-size: 45px;">
+<center>
+<i class="bi bi-instagram"></i>
+<i class="bi bi-twitter"></i>
+<i class="bi bi-facebook"></i>
+<i class="bi bi-youtube"></i>
+<i class="bi bi-controller"></i>
+</center>
+</div>
+</body>
+
+</html>
